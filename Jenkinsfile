@@ -1,5 +1,10 @@
 pipeline {
-    agent { label 'linux' } 
+    agent { 
+        node { 
+            label 'linux' 
+        } 
+    } 
+
     stages {
         stage ('Build') {
             steps {
