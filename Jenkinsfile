@@ -1,5 +1,6 @@
 pipeline {
     agent { label 'linux' } 
+    stages {
     stage ('Clone Source Code')
         steps {
             git url: 'https://github.com/jfrogdev/project-examples.git'
@@ -8,4 +9,5 @@ pipeline {
         steps {
             sh 'make all' 
         }
+    }
 }
