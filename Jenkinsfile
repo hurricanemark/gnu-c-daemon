@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node { 
-            label 'linux' 
+            label 'AzureSLES-13.91.130.158' 
         } 
     } 
 
